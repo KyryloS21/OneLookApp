@@ -8,6 +8,7 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.onelookapp.data.repository.SettingRepository
 import com.example.onelookapp.databinding.ActivitySplashBinding
+import com.example.onelookapp.ui.auth.AuthActivity
 /*import com.example.onelookapp.ui.home.HomeActivity
 import com.example.onelookapp.ui.auth.AuthActivity
 import com.example.onelookapp.ui.onboarding.OnBoardingActivity*/
@@ -24,24 +25,24 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvStart.setOnClickListener {
-            //startActivity(Intent(this, AuthActivity::class.java))
+            startActivity(Intent(this, AuthActivity::class.java))
         }
-        //settingRepository.setWatchOnBoarding(false)
+        settingRepository.setWatchOnBoarding(false)
     }
 
     override fun onResume() {
         super.onResume()
         Handler(Looper.getMainLooper()).postDelayed({
-            /*if (settingRepository.getWatchOnBoarding()){
+            if (settingRepository.getWatchOnBoarding()){
                 if (settingRepository.getAuth()){
-                    startActivity(Intent(this, HomeActivity::class.java))
+                    //startActivity(Intent(this, HomeActivity::class.java))
                 }else{
                     startActivity(Intent(this, AuthActivity::class.java))
                 }
             }else{
-                startActivity(Intent(this, OnBoardingActivity::class.java))
+                //startActivity(Intent(this, OnBoardingActivity::class.java))
 
-            }*/
+            }
         }, 1000)
     }
 }
