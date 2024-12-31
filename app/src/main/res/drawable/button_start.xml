@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/button_start_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Тінь під кнопкою -->
+    <item android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0"/>
+            <corners android:radius="24dp"/>
+        </shape>
+    </item>
+
+    <!-- Основна кнопка -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/Purple_Plum"/> <!-- Основний колір кнопки -->
+            <corners android:radius="24dp"/>
+        </shape>
+    </item>
+</layer-list>
