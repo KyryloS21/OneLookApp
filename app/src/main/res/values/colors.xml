@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Purple_Plum">#585CE5</color>
+    <color name="Titan_White">#FAFAFF</color>
+    <color name="White_Lilac">#F0F1F9</color>
+    <color name="Deep_Blue">#0F2851</color>
+    <color name="Light_Grey">#E5E6EE</color>
+    <color name="Violet">#A1A3F6</color>
+    <color name="Violet_Light">#D0D1FF</color>
+    <color name="Cold_grey">#415371</color>
+    <color name="Dust_Grey">#B0B2C3</color>
+    <color name="Lilac_Petals_Dark">#F0F1F9</color>
+
 </resources>
