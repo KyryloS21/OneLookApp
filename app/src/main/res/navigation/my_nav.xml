@@ -3,28 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/singUpFragment">
+    app:startDestination="@id/signUpFragment">
+
+    <!-- SignUp Fragment -->
     <fragment
-        android:id="@+id/singUpFragment"
-        android:name="com.example.onelookapp.ui.auth.fragments.SingUpFragment"
-        android:label="SingUpFragment" >
+        android:id="@+id/signUpFragment"
+        android:name="com.example.onelookapp.ui.auth.fragments.SingUpFragment">
         <action
-            android:id="@+id/action_singUpFragment_to_loginFragment"
+            android:id="@+id/action_signUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+
+    <!-- Login Fragment -->
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.onelookapp.ui.auth.fragments.LoginFragment"
-        android:label="LoginFragment" >
+        android:name="com.example.onelookapp.ui.auth.fragments.LoginFragment">
         <action
-            android:id="@+id/action_loginFragment_to_singUpFragment"
-            app:destination="@id/singUpFragment" />
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
         <action
             android:id="@+id/action_loginFragment_to_homeActivity"
             app:destination="@id/homeActivity" />
     </fragment>
+
+    <!-- Home Activity -->
     <activity
         android:id="@+id/homeActivity"
-        android:name="com.example.onelookapp.ui.home.HomeActivity"
-        android:label="HomeActivity" />
+        android:name="com.example.onelookapp.ui.home.HomeActivity" />
 </navigation>
